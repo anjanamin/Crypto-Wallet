@@ -146,7 +146,7 @@ st.sidebar.write(account.address)
 # @TODO
 # Call `get_balance` function and pass it your account address
 # Write the returned ether balance to the sidebar
-st.sidebar.write(get_balance(w3,account.address))
+st.sidebar.write("Total Eth", get_balance(w3,account.address))
 
 
 ##########################################
@@ -169,7 +169,7 @@ st.sidebar.write(candidate)
 hourly_rate = candidate_database[person][3]
 
 # Write the inTech Finder candidate's hourly rate to the sidebar
-st.sidebar.write(hourly_rate)
+st.sidebar.write("Hourly Rate", hourly_rate)
 
 # Identify the FinTech Finder candidate's Ethereum Address
 candidate_address = candidate_database[person][1]
@@ -242,7 +242,7 @@ wage = hourly_rate * hours
 
 # @TODO
 # Write the `wage` calculation to the Streamlit sidebar
-st.sidebar.write(wage)
+st.sidebar.write("wage)
 
 ##########################################
 # Step 2 - Part 2:
